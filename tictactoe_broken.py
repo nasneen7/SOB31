@@ -105,5 +105,5 @@ if __name__ == '__main__':
         game = add_piece(game, player, row, column)
         display_game(game)
         player = switch_player(player)
-        winner = check_winner(game)
+        winner = check_winner(game)  # '#' removed
     display_winner(winner)
