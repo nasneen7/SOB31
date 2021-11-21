@@ -20,7 +20,7 @@
 # Student is failing.
 
 exam_one = int(input("Input exam grade one: "))
-exam_two = int(input("Input exam grade two: ")) #chnaged str to int 
+exam_two = int(input("Input exam grade two: ")) #changed str to int 
 exam_three = int(input("Input exam grade three: "))  #exam_3 to exam_three and added int
 
 grades = [exam_one, exam_two, exam_three]  #addition of commas
@@ -29,7 +29,7 @@ sum = 0
 for grade in grades: #changed grade to grades
     sum = sum + grade
 
-avg = sum / len(grades) #changes grdes to grades
+avg = round(sum / len(grades)) #changes grdes to grades & added round to get rounded avgerage
 
 if avg >= 90:
     letter_grade = "A"
@@ -48,6 +48,10 @@ for grade in grades:
     print("Average: " + str(avg))
 
     print("Grade: " + letter_grade)
+
+    break    #added a break statement so that it prints once
+
+
 
 if letter_grade == "F": # changed letter-grade to letter_grade and == is added instead of 'is'
     print ("Student is failing.")  #added paranthesis
