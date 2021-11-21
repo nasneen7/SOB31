@@ -17,30 +17,29 @@
 # Exams: 50, 51, 0
 # Average: 33
 # Grade: F
-# Student iis failing.
+# Student is failing.
 
 exam_one = int(input("Input exam grade one: "))
+exam_two = int(input("Input exam grade two: ")) #chnaged str to int 
+exam_three = int(input("Input exam grade three: "))  #exam_3 to exam_three and added int
 
-exam_two = input("Input exam grade two: "))
-
-exam_3 = str(input("Input exam grade three: "))
-
-grades = [exam_one exam_two exam_three]
+grades = [exam_one, exam_two, exam_three]  #addition of commas
 sum = 0
-for grade in grade:
-  sum = sum + grade
 
-avg = sum / len(grdes)
+for grade in grades: #changed grade to grades
+    sum = sum + grade
+
+avg = sum / len(grades) #changes grdes to grades
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90:  #colon added
     letter_grade = "B"
 elif avg > 69 and avg < 80:
-    letter_grade = "C'
+    letter_grade = "C"   # "C' changed to "C"
 elif avg <= 69 and avg >= 65:
     letter_grade = "D"
-elif:
+else:  # elif to else
     letter_grade = "F"
 
 for grade in grades:
@@ -50,7 +49,7 @@ for grade in grades:
 
     print("Grade: " + letter_grade)
 
-if letter-grade is "F":
-    print "Student is failing."
+if letter_grade == "F": # changed letter-grade to letter_grade and == is added instead of 'is'
+    print ("Student is failing.")  #added paranthesis
 else:
-    print "Student is passing."
+    print ("Student is passing.")  #added paranthesis
